@@ -11,6 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Implements `Submit Tasks View` and Keybinding `ctrl+alt+v`
 - Add `BOJ API` testcodes
 - Add `BOJ API` mock data
+- Start to collect log to analyze usage pattern
 
 ### Changed
 
@@ -18,7 +19,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Restructure views
 - Use ProblemManager for caching
 - Start writing CHANGELOG
-- Implement boj-problem-api to have better speed
+- Implement boj-problem-api to have better speed than before
 
 ## [0.1.1] - 2019-03-06
 
