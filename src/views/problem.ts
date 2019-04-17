@@ -37,12 +37,6 @@ export class ProblemView extends BaseView {
 
     log(JSON.stringify(problem.description.split("\n")));
 
-    const convertHtml = (s: string) =>
-      s
-        .split("\n")
-        .map(x => (x === "" ? "" : `<p>${x}</p>`))
-        .reduce((prev, next) => prev + next, "");
-
     const style = `
     p {
       margin: 0 0 10px;
@@ -57,11 +51,11 @@ export class ProblemView extends BaseView {
 
     <h1>${problem.title}</h1>
     <h2>문제</h2>
-    ${convertHtml(problem.description)}
+    ${problem.description}
     <h2>입력</h2>
-    ${convertHtml(problem.inputDescription)}
+    ${problem.inputDescription}
     <h2>출력</h2>
-    ${convertHtml(problem.outputDescription)}
+    ${problem.outputDescription}
     <h2>테스트 케이스</h2>
     ${testcases}
   `;
